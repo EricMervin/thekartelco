@@ -3,96 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Kartel Co - Coming Soon</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            background-color: #f4efe8;
-            color: #0b1726;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            position: relative;
-        }
-
-        body::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0.4;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-            pointer-events: none;
-        }
-
-        .content {
-            text-align: center;
-            position: relative;
-            z-index: 1;
-        }
-
-        .logo-img {
-            max-width: 600px;
-            width: 100%;
-            height: auto;
-            margin-bottom: 40px;
-        }
-
-        .coming-soon {
-            font-size: 2rem;
-            font-weight: 400;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
-        .email {
-            position: absolute;
-            bottom: 40px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 1.2rem;
-            color: #0b1726;
-            text-decoration: none;
-            letter-spacing: 0px;
-            z-index: 1;
-        }
-
-        .email:hover {
-            opacity: 0.7;
-        }
-
-        @media (max-width: 768px) {
-            .logo-img {
-                max-width: 90%;
-            }
-
-            .coming-soon {
-                font-size: 1.5rem;
-            }
-
-            .email {
-                font-size: 1.08rem;
-            }
-        }
-    </style>
+    <title>TheKartel Co - Coming Soon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="toggle.css">
 </head>
 <body>
+    <div class="theme-toggle-container">
+        <label class="switch">
+            <input id="input" type="checkbox" />
+            <div class="slider round">
+                <div class="sun-moon">
+                    <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+                    <svg id="moon-dot-2" class="moon-dot" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+                    <svg id="moon-dot-3" class="moon-dot" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+                    <svg id="light-ray-1" class="light-ray" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+                    <svg id="light-ray-2" class="light-ray" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+                    <svg id="light-ray-3" class="light-ray" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+                    <svg id="cloud-1" class="cloud-dark" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+                    <svg id="cloud-2" class="cloud-dark" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+                    <svg id="cloud-3" class="cloud-dark" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+                    <svg id="cloud-4" class="cloud-light" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+                    <svg id="cloud-5" class="cloud-light" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+                    <svg id="cloud-6" class="cloud-light" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+                </div>
+                <div class="stars">
+                    <svg id="star-1" class="star" viewBox="0 0 20 20">
+                        <path d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"></path>
+                    </svg>
+                    <svg id="star-2" class="star" viewBox="0 0 20 20">
+                        <path d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"></path>
+                    </svg>
+                    <svg id="star-3" class="star" viewBox="0 0 20 20">
+                        <path d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"></path>
+                    </svg>
+                    <svg id="star-4" class="star" viewBox="0 0 20 20">
+                        <path d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"></path>
+                    </svg>
+                </div>
+            </div>
+        </label>
+    </div>
+    
     <div class="content">
-        <img src="assets/logo.png" alt="TheKartel Co" class="logo-img">
-        <p class="coming-soon">Coming Soon</p>
+        <img src="assets/logo.png" alt="TheKartel Co" class="logo-img" id="logo">
+        <p class="coming-soon">COMING SOON</p>
     </div>
     
     <a href="mailto:info@thekartel.co" class="email">info@thekartel.co</a>
+
+    <script src="theme-toggle.js"></script>
 </body>
 </html>
