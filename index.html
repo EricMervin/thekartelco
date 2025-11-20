@@ -1,13 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TheKartel Co - Coming Soon</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <title>The Kartel Co - Coming Soon</title>
     <style>
         * {
             margin: 0;
@@ -16,9 +12,9 @@
         }
 
         body {
-            font-family: 'Playfair Display', serif;
-            background-color: #F5E6D8;
-            color: #8B1E1E;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f4efe8;
+            color: #0b1726;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -31,17 +27,18 @@
             text-align: center;
         }
 
-        .brand {
-            font-size: 5rem;
-            font-weight: 500;
-            margin-bottom: 20px;
-            letter-spacing: 2px;
+        .logo-img {
+            max-width: 600px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 40px;
         }
 
         .coming-soon {
             font-size: 2rem;
             font-weight: 400;
             letter-spacing: 1px;
+            text-transform: uppercase;
         }
 
         .email {
@@ -50,7 +47,7 @@
             left: 50%;
             transform: translateX(-50%);
             font-size: 1rem;
-            color: #8B1E1E;
+            color: #0b1726;
             text-decoration: none;
             letter-spacing: 1px;
         }
@@ -60,8 +57,8 @@
         }
 
         @media (max-width: 768px) {
-            .brand {
-                font-size: 3rem;
+            .logo-img {
+                max-width: 90%;
             }
 
             .coming-soon {
@@ -76,7 +73,7 @@
 </head>
 <body>
     <div class="content">
-        <h1 class="brand">TheKartel Co</h1>
+        <img src="assets/logo.png" alt="TheKartel Co" class="logo-img">
         <p class="coming-soon">Coming Soon</p>
     </div>
     
